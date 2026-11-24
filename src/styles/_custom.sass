@@ -203,7 +203,6 @@ figcaption
   background-position: center
   border-radius: 20px
   transition: all 0.3s ease
-  cursor: pointer
   &:hover 
     background-color: #FEE2E2
     transform: translateY(-5px)
@@ -408,7 +407,6 @@ figcaption
   background-color: #D5DED3
   border-radius: 20px
   transition: all 0.3s ease
-  cursor: pointer
 
 .fa-chevron-left
   color: #FFD93D
@@ -547,25 +545,40 @@ figcaption
 
 .fa-leaf
   position: relative
-  padding-left: 0.4em
+  padding-left: 0.1em
 .fa-leaf::before
   content: "•"
   position: absolute
   font-size: 20px
   left: 0
   top: -0.2em
-
 .fa-leaft
   position: relative
-  padding-left: 0.4em
+  padding-left: 0.1em
 .fa-leaft::before
   content: "•"
   position: absolute
   font-size: 20px
   left: 0
   top: -0.3em
+.lista-ul
+  list-style: none
+  padding: 0
+  li
+    align-items: flex-start
+    gap: 0.1em
+  .fa-leaf,
+  .fa-leaft
+    flex: 0 0 0.6em
+    width: 0.6em
+    height: 1.2em
+    margin-top: 0
+  p
+    flex: 1
+    min-width: 0
+    margin-bottom: 0
+    
 
-  
 //////////////////////////TABLAS///////////////////////
 
 .tabla-a thead 
